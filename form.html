@@ -13,7 +13,7 @@
     <main>
         <hr>
         <section>
-            <form action="/submit" method="post">
+            <form action="login.php" method="get">
                 <label for="text">Name:</label>
                 <input type="text">
 
@@ -39,13 +39,78 @@
                 
                 <br>
                 <label for="time">Time:</label>
-                <input type="time" name="" id="">
+                <input type="time" >
 
                 <br>
                 <label for="datetime-local">Local date and time:</label>
                 <input type="datetime-local">
 
                 <br>
+                <label for="url">Website:</label>
+                <input type="url">
+
+                <br>
+                <label for="search">Search</label>
+                <input type="search">
+                <!-- Used for search bars. -->
+
+                <br>
+                <label for="month">Month</label>
+                <input type="month">
+                <!-- Choose a month -->
+
+                <label for="week">Week</label>
+                <input type="week">
+                <!-- Choose a week. -->
+
+                <br>
+                <label for="range">Range of No-</label>
+                <input type="range" min="0" max="100">
+                <!-- Creates a slider. -->
+
+                <br>
+                <label for="Checkbox">Checkboxes:</label>
+                <input type="checkbox">Bangladesh
+                <input type="checkbox">Pakistan
+                <!-- Multiple options can be selected. -->
+
+                <br>
+                <label for="color">Choose a Color:</label>
+                <input type="color">
+
+                <br>
+                <label for="radio">Gender:</label>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <!-- Only one option can be selected within the same name group. -->
+                
+                <br>
+                <label for="file">Upload your CV:</label>
+                <input type="file">
+                <!-- Upload files. -->
+
+                <br>
+                <label for="hidden">Here is a hidden input-</label>
+                <input type="hidden" value="Bangladesh">
+                <!--Invisible to users.     Mostly used by developers.  -->
+
+                <br>
+                <label for="reset">Reset the form</label>
+                <input type="reset" value="Reset">
+                <!-- Resets the form -->
+
+                <br>
+                <input type="submit" value="Submit the Form">
+                <!-- Submits the form. -->
+
+                <br>
+                <label for="textarea">Write your opinion:</label>
+                <textarea rows="5" cols="80" name="" id=""></textarea>
+                <!-- used for long text -->
+
+
+
+                
             </form>
         </section>
     </main>
