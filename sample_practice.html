@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- Tells the browser this document uses HTML5 -->
+
+<html lang="en">
+<!-- Root element of the webpage -->
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Football Club Registration</title>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>⚽ Dream Football Club</h1>
+
+        <p>
+            Join our football academy and become the next superstar!
+        </p>
+
+    </header>
+
+    <hr>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- About Section -->
+
+        <section>
+
+            <h2>About Our Club</h2>
+
+            <p>
+                Dream Football Club trains young footballers and helps
+                them improve their skills.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Professional Coaches</li>
+                <li>Modern Training Ground</li>
+                <li>Weekly Matches</li>
+                <li>Fitness Training</li>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Registration Form -->
+
+        <section>
+
+            <h2>Registration Form</h2>
+
+            <!-- Form starts here -->
+
+            <form action="#" method="post">
+
+                <!-- Groups related fields together -->
+
+                <fieldset>
+
+                    <!-- Title of this fieldset -->
+
+                    <legend>Player Information</legend>
+
+                    <!-- Full Name -->
+
+                    <label for="fullname">
+                        Full Name:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <br><br>
+
+                    <!-- Email -->
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+
+                    <br><br>
+
+                    <!-- Password -->
+
+                    <label for="password">
+                        Password:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="6"
+                        required>
+
+                    <br><br>
+
+                    <!-- Age -->
+
+                    <label for="age">
+                        Age:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="8"
+                        max="40">
+
+                    <br><br>
+
+                    <!-- Date of Birth -->
+
+                    <label for="dob">
+                        Date of Birth:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob">
+
+                    <br><br>
+
+                    <!-- Phone -->
+
+                    <label for="phone">
+                        Phone Number:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+8801XXXXXXXXX">
+
+                    <br><br>
+
+                    <!-- Gender -->
+
+                    <p><strong>Gender</strong></p>
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male">
+
+                    <label for="male">
+                        Male
+                    </label>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female">
+
+                    <label for="female">
+                        Female
+                    </label>
+
+                    <br><br>
+
+                    <!-- Playing Position -->
+
+                    <label for="position">
+                        Playing Position:
+                    </label>
+
+                    <br>
+
+                    <select id="position" name="position">
+
+                        <option>Select Position</option>
+
+                        <option>Goalkeeper</option>
+
+                        <option>Defender</option>
+
+                        <option>Midfielder</option>
+
+                        <option>Forward</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <!-- Skills -->
+
+                    <p><strong>Your Skills</strong></p>
+
+                    <input
+                        type="checkbox"
+                        id="dribbling"
+                        name="skill1">
+
+                    <label for="dribbling">
+                        Dribbling
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="passing"
+                        name="skill2">
+
+                    <label for="passing">
+                        Passing
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="shooting"
+                        name="skill3">
+
+                    <label for="shooting">
+                        Shooting
+                    </label>
+
+                    <br><br>
+
+                    <!-- Upload Photo -->
+
+                    <label for="photo">
+                        Upload Your Photo:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo">
+
+                    <br><br>
+
+                    <!-- About Yourself -->
+
+                    <label for="about">
+                        Tell us about yourself:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="about"
+                        name="about"
+                        rows="5"
+                        cols="40"
+                        placeholder="Write something..."></textarea>
+
+                    <br><br>
+
+                    <!-- Terms -->
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required>
+
+                    <label for="terms">
+                        I agree to the club rules.
+                    </label>
+
+                    <br><br>
+
+                    <!-- Buttons -->
+
+                    <button type="submit">
+                        Join Club
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Contact -->
+
+        <section>
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Email:
+                <a href="mailto:info@dreamclub.com">
+                    info@dreamclub.com
+                </a>
+            </p>
+
+            <p>
+                Visit our
+                <a href="https://www.fifa.com" target="_blank">
+                    Favorite Football Website
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Dream Football Club.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
